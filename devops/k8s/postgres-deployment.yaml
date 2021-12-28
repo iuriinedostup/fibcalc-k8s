@@ -1,3 +1,11 @@
+apiVersion: v1
+data:
+  PGPASSWORD: 123456  # needs to be encrypted
+kind: Secret
+metadata:
+  name: pgpassword
+type: Opaque
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
