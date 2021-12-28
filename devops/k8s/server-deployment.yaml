@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: server
-          image: iuriinedostup/multi-server
+          image: iuriinedostup/fibcalc-k8s--server
           ports:
             - containerPort: 5000
           env:

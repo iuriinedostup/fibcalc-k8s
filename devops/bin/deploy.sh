@@ -15,9 +15,9 @@ msg.done
 
 
 msg.task 'Updating kubernetes deployments'
-kubectl set image deployments/server-deployment server=iuriinedostup/multi-server:$SHA
-kubectl set image deployments/server-deployment server=iuriinedostup/multi-client:$SHA
-kubectl set image deployments/server-deployment server=iuriinedostup/multi-worker:$SHA
+kubectl set image deployments/server-deployment server=iuriinedostup/fibcalc-k8s-server:$SHA
+kubectl set image deployments/server-deployment server=iuriinedostup/fibcalc-k8s-client:$SHA
+kubectl set image deployments/server-deployment server=iuriinedostup/fibcalc-k8s-worker:$SHA
 msg.task 'Done'
 
 kubectl get pods

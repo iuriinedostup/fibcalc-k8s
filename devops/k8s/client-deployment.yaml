@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: client
-          image: iuriinedostup/multi-client
+          image: iuriinedostup/fibcalc-k8s-client
           ports:
             - containerPort: 3000

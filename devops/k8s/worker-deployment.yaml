@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: worker
-          image: iuriinedostup/multi-worker
+          image: iuriinedostup/fibcalc-k8s-worker
           env:
             - name: REDIS_HOST
               value: redis-cluster-ip-service

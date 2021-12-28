@@ -58,9 +58,9 @@ jobs:
     needs: test
     env:
       DOCKER_REPO: iuriinedostup
-      SERVER_IMAGE: fibcalc-server
-      CLIENT_IMAGE: fibcalc-server
-      WORKER_IMAGE: fibcalc-server
+      SERVER_IMAGE: fibcalc-k8s-server
+      CLIENT_IMAGE: fibcalc-k8s-client
+      WORKER_IMAGE: fibcalc-k8s-worker
     steps:
       - name: Checkout
         uses: actions/checkout@v2
